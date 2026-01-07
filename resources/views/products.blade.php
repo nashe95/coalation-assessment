@@ -49,6 +49,7 @@
             </table>
         </div>
 
-        <!--@TODO: add js file and link script here-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="{{ asset('js/products.js') }}"></script>
     </body>
 </html>
