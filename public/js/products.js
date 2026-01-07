@@ -1,11 +1,16 @@
 $(document).ready(function () {
 
+
     $('#product-form').submit(function (e) {
         e.preventDefault();
 
         $.post('/products', $(this).serialize(), renderTable);
         this.reset();
     });
+
+    function loadProducts() {
+        $.get('/products/list', renderTable);
+    }
 
     function renderTable(response) {
         let rows = '';
@@ -25,5 +30,6 @@ $(document).ready(function () {
         $('#product-table').html(rows);
         $('#grand-total').text(response.total.toFixed(2));
     }
+
 
 });
