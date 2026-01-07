@@ -25,10 +25,30 @@
                 </div>
             </form>
 
+            <hr>
 
+            <table class="table table-bordered mt-4">
+                <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Date Time</th>
+                    <th>Total Value</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="product-table"></tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="4" class="text-end">Grand Total</th>
+                    <th id="grand-total"></th>
+                    <th></th>
+                </tr>
+                </tfoot>
+            </table>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="{{ asset('js/products.js') }}"></script>
+        <!--@TODO: add js file and link script here-->
     </body>
 </html>
